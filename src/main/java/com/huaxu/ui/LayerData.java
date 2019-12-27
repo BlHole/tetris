@@ -53,8 +53,7 @@ public abstract class LayerData extends Layer {
 			percent = percent > 1 ? 1.0 : percent;
 			//绘制单条记录
 			String strPoint = recodePoint == 0 ? null : Integer.toString(recodePoint);
-			this.drawRect(START_Y + i * (RECT_H + SPA), pla.getName(),
-					strPoint, percent, g);
+			this.drawRect(START_Y + i * (RECT_H + SPA), pla.getName(), strPoint, percent, g);
 		}
 	}
 	abstract public void paint(Graphics g);

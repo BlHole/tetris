@@ -1,7 +1,5 @@
 package com.huaxu.config;
 
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
 import java.io.Serializable;
 
 import com.huaxu.util.FileUtil;
@@ -16,34 +14,26 @@ public class GameConfig implements Serializable{
 	private static DataConfig DATA_CONFIG = null;
 
 	private static SystemConfig SYSTEM_CONFIG = null;
-	//TODO 修改xml配置文件
-	private static final boolean IS_DEBUG = true;
+
+	private static ControlConfig CONTROL_CONFIG = null;
 
 	static {
 		try {
-			if(IS_DEBUG){
-				// 创建XML读取器
-				SAXReader reader = new SAXReader();
-				// 读取XML文件
-				Document doc = reader.read(FileUtil.getInputStream("data/cfg.xml"));
-				// 获得XMl文件的根节点
-				Element game = doc.getRootElement();
-				// 创建界面配置对象
-				FRAME_CONFIG = new FrameConfig(game.element("frame"));
-				// 配置系统对象
-				SYSTEM_CONFIG = new SystemConfig(game.element("system"));
-				// 创建数据访问配置对象
-				DATA_CONFIG = new DataConfig(game.element("data"));
+			// 创建XML读取器
+			SAXReader reader = new SAXReader();
+			// 读取XML文件
+			Document doc = reader.read(FileUtil.getInputStream("data/cfg.xml"));
+			// 获得XMl文件的根节点
+			Element game = doc.getRootElement();
+			// 创建界面配置对象
+			FRAME_CONFIG = new FrameConfig(game.element("frame"));
+			// 配置系统对象
+			SYSTEM_CONFIG = new SystemConfig(game.element("system"));
+			// 创建数据访问配置对象
+			DATA_CONFIG = new DataConfig(game.element("data"));
+			// 读取游戏控制配置对象
+			CONTROL_CONFIG = new ControlConfig(game.element("control"));
 
-			}else{
-				ObjectInputStream ois = new ObjectInputStream(new FileInputStream("data/frameCfg.dat"));
-				FRAME_CONFIG = (FrameConfig)ois.readObject();
-				ois = new ObjectInputStream(new FileInputStream("data/systemCfg.dat"));
-				SYSTEM_CONFIG = (SystemConfig)ois.readObject();
-				ois = new ObjectInputStream(new FileInputStream("data/dataCfg.dat"));
-				DATA_CONFIG = (DataConfig)ois.readObject();
-				ois.close();
-			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -52,8 +42,7 @@ public class GameConfig implements Serializable{
 	/*
 	 * 构造器私有化
 	 */
-	private GameConfig() {
-	}
+	private GameConfig() {}
 
 	/*
 	 * 获得窗口配置
@@ -75,14 +64,11 @@ public class GameConfig implements Serializable{
 	public static DataConfig getDataConfig() {
 		return DATA_CONFIG;
 	}
-//
-//	public static void main(String[] args) throws Exception {
-//		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("data/frameCfg.dat"));
-//		oos.writeObject(FRAME_CONFIG);
-//		oos = new ObjectOutputStream(new FileOutputStream("data/systemCfg.dat"));
-//		oos.writeObject(SYSTEM_CONFIG);
-//		oos = new ObjectOutputStream(new FileOutputStream("data/dataCfg.dat"));
-//		oos.writeObject(DATA_CONFIG);
-//		System.out.println("写入成功");
-//	}
+
+	/*
+	 * 获得控制配置
+	 */
+	public static ControlConfig getControlConfig() {
+		return CONTROL_CONFIG;
+	}
 }

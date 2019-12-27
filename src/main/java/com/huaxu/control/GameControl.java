@@ -18,6 +18,7 @@ import java.io.ObjectInputStream;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
@@ -96,14 +97,12 @@ public class GameControl {
 		//创建键盘码与方法名的映射数组
 		this.actionList = new HashMap<Integer, Method>();
 		try {
-			ObjectInputStream ois = new ObjectInputStream(FileUtil.getInputStream("data/control.dat"));
-			HashMap<Integer, String> cfgSet = (HashMap<Integer, String>)ois.readObject();
-			ois.close();
-			Set<Entry<Integer,String>> entryset = cfgSet.entrySet();
-			for(Entry<Integer,String> e : entryset){
-				actionList.put(e.getKey(), this.gameService.getClass().getMethod(e.getValue()));
+			Map<String, Integer> controls = GameConfig.getControlConfig().getCollection();
+			for (Entry<String, Integer> entry : controls.entrySet()) {
+				actionList.put(entry.getValue(), this.gameService.getClass().getMethod(entry.getKey()));
 			}
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

@@ -1,7 +1,6 @@
 package com.huaxu.ui;
 
 import com.huaxu.ui.imgge.Img;
-
 import java.awt.Graphics;
 
 public class LayerDataBase extends LayerData {
@@ -14,5 +13,4 @@ public class LayerDataBase extends LayerData {
 		this.creaWindow(g);
 		this.showData(Img.DB, this.dto.getDbRecode(), g);
 	}
-	
 }

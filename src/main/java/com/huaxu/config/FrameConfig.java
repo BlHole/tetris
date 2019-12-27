@@ -6,7 +6,9 @@ import java.util.List;
 
 import org.dom4j.Element;
 
-public class FrameConfig implements Serializable{
+public class FrameConfig implements Serializable {
+
+	private static final long serialVersionUID = 111360817344869475L;
 
 	private final String title;
 
@@ -51,7 +53,6 @@ public class FrameConfig implements Serializable{
 		// 游戏失败图片
 		this.loseIdx = Integer.parseInt(frame.attributeValue("loseIdx"));
 		// 获取窗口属性
-		@SuppressWarnings("unchecked")
 		List<Element> layers = frame.elements("layer");
 		layersConfig = new ArrayList<LayerConfig>();
 		for (Element layer : layers) {

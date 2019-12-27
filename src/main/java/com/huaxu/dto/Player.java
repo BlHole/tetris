@@ -2,8 +2,10 @@ package com.huaxu.dto;
 
 import java.io.Serializable;
 
-@SuppressWarnings("serial")
-public class Player implements Comparable<Player> , Serializable{
+public class Player implements Comparable<Player>, Serializable {
+
+	private static final long serialVersionUID = -8494572248923790701L;
+
 	private String name;
 	
 	private int point;
@@ -33,6 +35,4 @@ public class Player implements Comparable<Player> , Serializable{
 	public int compareTo(Player pla) {
 		return pla.point - this.point;
 	}
-	
-	
 }

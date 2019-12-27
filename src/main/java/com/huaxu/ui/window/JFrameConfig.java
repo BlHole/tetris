@@ -1,6 +1,9 @@
 package com.huaxu.ui.window;
 
+import com.huaxu.config.ControlConfig;
+import com.huaxu.config.GameConfig;
 import com.huaxu.control.GameControl;
+import com.huaxu.ui.imgge.ImageIconDiy;
 import com.huaxu.util.FileUtil;
 import com.huaxu.util.FrameUtil;
 
@@ -16,6 +19,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
@@ -40,14 +44,12 @@ public class JFrameConfig extends JFrame{
 
 	private JLabel errorMsg = new JLabel();
 
-	private final static Image IMG_PSP = new ImageIcon("data/psp.png").getImage();
+	private final static Image IMG_PSP = new ImageIconDiy("data/psp.png").getImage();
 
 	private final static String[] METHOD_NAMES = {
-			"keyRight","keyUp","keyLeft","keyDown",
-			"keyFunRight","keyFunUp","keyFunLeft","keyFunDown"
+			"keyRight", "keyUp", "keyLeft", "keyDown",
+			"keyFunRight", "keyFunUp", "keyFunLeft", "keyFunDown"
 	};
-
-	private final static String PATH = "data/control.dat";
 
 	public JFrameConfig(GameControl gameControl){
 		//获得游戏控制器对象
@@ -84,20 +86,9 @@ public class JFrameConfig extends JFrame{
 			keyText[j] = new TextCtrl(x, y, w, h,METHOD_NAMES[j]);
 			y += 34;
 		}
-		try {
-			ObjectInputStream ois = new ObjectInputStream(FileUtil.getInputStream(PATH));
-			HashMap<Integer, String> cfgSet = (HashMap<Integer, String>)ois.readObject();
-			ois.close();
-			Set<Entry<Integer,String>> entryset = cfgSet.entrySet();
-			for (Entry<Integer,String> e : entryset){
-				for (TextCtrl tc : keyText) {
-					if(tc.getMethodName().equals(e.getValue())){
-						tc.setKeyCode(e.getKey());
-					}
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
+		Map<String, Integer> controlConfig = GameConfig.getControlConfig().getCollection();
+		for (TextCtrl tc : keyText) {
+			tc.setKeyCode(controlConfig.get(tc.getMethodName()));
 		}
 	}
 	/*
@@ -131,7 +122,6 @@ public class JFrameConfig extends JFrame{
 			}
 		});
 		jp.add(this.btnUser);
-
 		return jp;
 	}
 	/*
@@ -141,8 +131,6 @@ public class JFrameConfig extends JFrame{
 
 		JTabbedPane jtp = new JTabbedPane();
 		jtp.addTab("控制设置", this.createContralPanel());
-
-
 		return jtp;
 	}
 	/*
@@ -166,7 +154,7 @@ public class JFrameConfig extends JFrame{
 	 * 写入游戏配置
 	 */
 	private boolean writeConfig(){
-		HashMap<Integer, String> keySet = new HashMap<Integer,String>();
+		Map<Integer, String> keySet = new HashMap();
 		for (int i = 0; i < this.keyText.length; i++) {
 			int keyCode = this.keyText[i].getKeyCode();
 			if(keyCode == 0) {
@@ -179,15 +167,6 @@ public class JFrameConfig extends JFrame{
 			this.errorMsg.setText("重复按键");
 			return false;
 		}
-		try {
-			ObjectOutputStream oos =  new ObjectOutputStream(FileUtil.getOutputStream(PATH));
-			oos.writeObject(keySet);
-			oos.close();
-		} catch (Exception e) {
-			this.errorMsg.setText(e.getMessage());
-			return false;
-		}
-		this.errorMsg.setText(null);
 		return true;
 	}
 }

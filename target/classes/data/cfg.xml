@@ -1,59 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <game>
-    <frame  title ="俄罗斯方块--Tshy"   windowUp = "30" width = "1168"   height = "680"  padding = "16"  
-        			border = "7"  sizeRol = "5"  loseIdx = "8">
-        <button w = "105" h = "40"  >
-            		<start x= "830"  y = "54"></start>
-            		<userConfig x = "965" y = "54"></userConfig>
-        		</button>
-        <layer className="com.huaxu.ui.LayerBackground" x = "0"   y ="0"   w ="0"   h="0"  ></layer>
-        <layer className="com.huaxu.ui.LayerDataBase" x = "40"   y ="32"   w ="334"   h="279"></layer>
-        <layer className="com.huaxu.ui.LayerDisk" x = "40"   y ="343"   w ="334"   h="279"   ></layer>
-        <layer className="com.huaxu.ui.LayerGame" x = "414"   y ="32"   w ="334"   h="590"   ></layer>
-        <layer className="com.huaxu.ui.LayerButton" x = "788"   y ="32"   w ="334"   h="80"  ></layer>
-        <layer className="com.huaxu.ui.LayerNext" x = "788"   y ="128"   w ="176"   h="116"   ></layer>
-        <layer className="com.huaxu.ui.LayerLevel" x = "968"   y ="128"   w ="154"   h="116"  ></layer>
-        <layer className="com.huaxu.ui.LayerPoint" x = "788"   y ="266"   w ="334"   h="160"   ></layer>
-        <layer className="com.huaxu.ui.LayerAbout" x = "788"   y ="458"   w ="334"   h="164"   ></layer>
-        
-    </frame>
-    <system minX = "0" maxX= "9" minY = "0" maxY = "17"  levelUp = "20" >
-     		<rect round = "true">
-     		    		<point x = "4"  y ="0"/><point x = "3"  y ="0"/><point x = "5"  y ="0"/><point x = "6"  y ="0"/>
-     				</rect>
-     		<rect round = "true">
-     		  		  <point x = "4"  y ="0"/><point x = "3"  y ="0"/><point x = "5"  y ="0"/><point x = "4"  y ="1"/>
-     				</rect>
-     		<rect round = "true">
-     		 		   <point x = "4"  y ="0"/><point x = "3"  y ="0"/><point x = "5"  y ="0"/><point x = "3"  y ="1"/>
-     				</rect>
-     		<rect round = "true">
-     				    <point x = "4"  y ="0"/><point x = "5"  y ="0"/><point x = "3"  y ="1"/><point x = "4"  y ="1"/>
-     				</rect>
-     		<rect round = "false">
-     		    		<point x = "4"  y ="0"/><point x = "5"  y ="0"/><point x = "4"  y ="1"/><point x = "5"  y ="1"/>
-     				</rect>
-     		<rect round = "true">
-     		    		<point x = "4"  y ="0"/><point x = "3"  y ="0"/><point x = "5"  y ="0"/><point x = "5"  y ="1"/>
-     				</rect>
-     		<rect round = "true">
-     		    		<point x = "4"  y ="0"/><point x = "3"  y ="0"/><point x = "4"  y ="1"/><point x = "5"  y ="1"/>
-     				</rect>
-     		<plusPoint  rm = "1"  point = "10" />
-     		<plusPoint  rm = "2"  point = "30" />
-     		<plusPoint  rm = "3"  point = "50" />
-     		<plusPoint  rm = "4"  point = "80" />
-     		      
-    </system>
-    <data maxRow = "5">
+	<frame title="俄罗斯方块--Tshy" windowUp="30" width="1168" height="680" padding="16" border="7" sizeRol="5" loseIdx="8">
+
+		<button w="105" h="40">
+			<start x="830" y="54"/>
+			<userConfig x="965" y="54"/>
+		</button>
+		<layer className="com.huaxu.ui.LayerBackground" x = "0"   y ="0"   w ="0"   h="0"  ></layer>
+		<layer className="com.huaxu.ui.LayerDataBase" x = "40"   y ="32"   w ="334"   h="279"></layer>
+		<layer className="com.huaxu.ui.LayerDisk" x = "40"   y ="343"   w ="334"   h="279"   ></layer>
+		<layer className="com.huaxu.ui.LayerGame" x = "414"   y ="32"   w ="334"   h="590"   ></layer>
+		<layer className="com.huaxu.ui.LayerButton" x = "788"   y ="32"   w ="334"   h="80"  ></layer>
+		<layer className="com.huaxu.ui.LayerNext" x = "788"   y ="128"   w ="176"   h="116"   ></layer>
+		<layer className="com.huaxu.ui.LayerLevel" x = "968"   y ="128"   w ="154"   h="116"  ></layer>
+		<layer className="com.huaxu.ui.LayerPoint" x = "788"   y ="266"   w ="334"   h="160"   ></layer>
+		<layer className="com.huaxu.ui.LayerAbout" x = "788"   y ="458"   w ="334"   h="164"   ></layer>
+	</frame>
+
+	<system minX = "0" maxX= "9" minY = "0" maxY = "17"  levelUp = "20" >
+		<rect round = "true">
+			<point x = "4"  y ="0"/>
+			<point x = "3"  y ="0"/>
+			<point x = "5"  y ="0"/>
+			<point x = "6"  y ="0"/>
+		</rect>
+		<rect round = "true">
+			<point x = "4"  y ="0"/>
+			<point x = "3"  y ="0"/>
+			<point x = "5"  y ="0"/>
+			<point x = "4"  y ="1"/>
+		</rect>
+		<rect round = "true">
+			<point x = "4"  y ="0"/>
+			<point x = "3"  y ="0"/>
+			<point x = "5"  y ="0"/>
+			<point x = "3"  y ="1"/>
+		</rect>
+		<rect round = "true">
+			<point x = "4"  y ="0"/>
+			<point x = "5"  y ="0"/>
+			<point x = "3"  y ="1"/>
+			<point x = "4"  y ="1"/>
+		</rect>
+		<rect round = "false">
+			<point x = "4"  y ="0"/>
+			<point x = "5"  y ="0"/>
+			<point x = "4"  y ="1"/>
+			<point x = "5"  y ="1"/>
+		</rect>
+		<rect round = "true">
+			<point x = "4"  y ="0"/>
+			<point x = "3"  y ="0"/>
+			<point x = "5"  y ="0"/>
+			<point x = "5"  y ="1"/>
+		</rect>
+		<rect round = "true">
+			<point x = "4"  y ="0"/>
+			<point x = "3"  y ="0"/>
+			<point x = "4"  y ="1"/>
+			<point x = "5"  y ="1"/>
+		</rect>
+		<plusPoint rm = "1" point = "10" />
+		<plusPoint rm = "2" point = "30" />
+		<plusPoint rm = "3" point = "50" />
+		<plusPoint rm = "4" point = "80" />
+	</system>
+
+
+	<data maxRow = "5">
 		<dataA className = "com.huaxu.dao.DataBase">
-				<param key = "driver"  value = "com.mysql.jdbc.Driver"/>
-				<param key = "dbUrl"  value = "jdbc:mysql://localhost:3306/game_test"/>
-				<param key = "dbUser"  value = "root"/>
-				<param key = "dbPwd"  value = "root"/>
+			<param key = "driver"  value = "com.mysql.jdbc.Driver"/>
+			<param key = "dbUrl"  value = "jdbc:mysql://localhost:3306/game_test"/>
+			<param key = "dbUser"  value = "root"/>
+			<param key = "dbPwd"  value = "root"/>
 		</dataA>
 		<dataB className = "com.huaxu.dao.DataDisk">
-				<param key = "path"  value = "data/recode.dat"/>
+			<param key = "入云龙"  value = "8923"/>
+			<param key = "豹子头"  value = "5236"/>
+			<param key = "花和尚"  value = "1890"/>
+			<param key = "双枪将"  value = "900"/>
+			<param key = "青面兽"  value = "400"/>
 		</dataB>
-    </data>
+	</data>
+
+	<control>
+		<param name = "keyLeft"  code = "37"/>
+		<param name = "keyUp"  code = "38"/>
+		<param name = "keyRight"  code = "39"/>
+		<param name = "keyDown"  code = "40"/>
+		<param name = "keyFunRight"  code = "32"/>
+		<param name = "keyFunUp"  code = "113"/>
+		<param name = "keyFunLeft"  code = "82"/>
+		<param name = "keyFunDown"  code = "69"/>
+	</control>
 </game>

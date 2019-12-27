@@ -4,8 +4,10 @@ import java.io.Serializable;
 
 import org.dom4j.Element;
 
-public class DataConfig implements Serializable{
-	
+public class DataConfig implements Serializable {
+
+	private static final long serialVersionUID = 7056246566833406177L;
+
 	private final int maxRow;
 	
 	private final DataInterfaceConfig dataA;
