@@ -1,90 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15c4b7ce-de96-4c83-acbe-be1ad8361807" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/config/ButtonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/config/DataConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/config/DataInterfaceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/config/FrameConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/config/GameConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/config/LayerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/config/SystemConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/control/GameControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/control/PlayerControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/dao/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/dao/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/dao/DataDisk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/dao/DataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/dto/GameDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/dto/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/entity/GameAct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/service/GameService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/service/GameTetris.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/Layer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerAbout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerBackground.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerDataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerDisk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerNext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/imgge/Img.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/window/JFrameConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/window/JFrameGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/window/JFrameSavePoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/window/JPanelGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/ui/window/TextCtrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/util/FrameUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huaxu/util/GameFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/control.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/dataCfg.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/frameCfg.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/psp.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/psp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/recode.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/systemCfg.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/background/a9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/rect - 副本.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/rect.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/game/shodow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/config.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/db.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/disk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/exp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/level.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/num.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/pause.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/rmline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/sign.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/string/strat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/window/Window.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/window/rect.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphics/window/rect.png" afterDir="false" />
-    </list>
+    <list default="true" id="15c4b7ce-de96-4c83-acbe-be1ad8361807" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -137,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JPanelGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JPanelGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/huaxu/ui/window/JPanelGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+            <state relative-caret-position="280">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1684#1788#0" expanded="true" />
@@ -149,6 +66,18 @@
                 <element signature="e#2142#2255#0" expanded="true" />
                 <element signature="e#2254#2255#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="18">
+                <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -285,11 +214,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strat.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/graphics/string/strat.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
       <file leaf-file-name="ImageIcon.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/javax/swing/ImageIcon.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -384,6 +308,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/huaxu/ui/window/JFrameConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/huaxu/config/SystemConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/huaxu/ui/window/JPanelGame.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -536,12 +461,12 @@
       <updated>1577410094328</updated>
       <workItem from="1577410096129" duration="1700000" />
       <workItem from="1577412051781" duration="3816000" />
-      <workItem from="1577423459996" duration="119000" />
+      <workItem from="1577423459996" duration="313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5635000" />
+    <option name="totallyTimeSpent" value="5829000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,9 +499,9 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" visible="true" weight="0.32923076" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" weight="0.32923076" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32923076" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32923076" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32923076" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1971917" />
       <window_info anchor="bottom" id="JProfiler" order="7" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -601,16 +526,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/huaxu/ui/LayerGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1029,8 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/huaxu/ui/window/JPanelGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+        <state relative-caret-position="280">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1684#1788#0" expanded="true" />
@@ -1038,6 +953,16 @@
             <element signature="e#2142#2255#0" expanded="true" />
             <element signature="e#2254#2255#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="18">
+            <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
